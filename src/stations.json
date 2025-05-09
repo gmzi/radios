@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Pop 101.5",
+    "url": "https://www.radiopop.fm/",
+    "stream": "http://popradio.stweb.tv/popradio/live/playlist.m3u8"
+  },
+  {
+    "name": "Rock & Pop",
+    "url": "https://fmrockandpop.com/",
+    "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOP.mp3"
+  },
+  {
+    "name": "Nacional Clasica",
+    "url": "https://www.radionacional.com.ar/nacional-clasica/",
+    "stream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad37"
+  },
+  {
+    "name": "La Patriada FM",
+    "url": "https://fmlapatriada.com.ar/",
+    "stream": "https://cdn.instream.audio:9107/stream"
+  },
+  {
+    "name": "Metro 95.1",
+    "url": "https://www.metro951.com/",
+    "stream": "https://27343.live.streamtheworld.com:443/METRO"
+  },
+  {
+    "name": "La 2x4",
+    "url": "https://buenosaires.gob.ar/secretariadecomunicacion/la-2x4",
+    "stream": "https://media.radios.ar:9270/"
+  },
+  {
+    "name": "Radio Universidad CALF",
+    "url": "https://universidadcalf.com/",
+    "stream": "https://cdn.instream.audio/:9032/stream?in_device_id=wp-249da420-6c99-4cd8-8e76-76cf52479750"
+  },
+  {
+    "name": "LU 5 AM",
+    "url": "https://lu5am.com/",
+    "stream": "https://live.lu5am.com:8443/LU5?type=.mp3&_=1"
+  },
+  {
+    "name": "WHYY - NPR Phil Station",
+    "url": "https://whyy.org/",
+    "stream": "https://whyy.streamguys1.com/whyy_persistentplayer"
+  },
+  {
+    "name": "WRTI Classical",
+    "url": "https://www.wrti.org/",
+    "stream": "https://19003.live.streamtheworld.com/WRTI_CLASSICAL.mp3?uuid=hf4hf5ll"
+  },
+  {
+    "name": "WRTI Jazz",
+    "url": "https://www.wrti.org/",
+    "stream": "https://22213.live.streamtheworld.com/WRTI_JAZZ.mp3?uuid=hf4hf5ll"
+  },
+  {
+    "name": "WXPN",
+    "url": "https://xpn.org/",
+    "stream": "https://wxpn.xpn.org/xpnmp3hi"
+  }
+]

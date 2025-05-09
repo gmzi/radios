@@ -1,0 +1,17 @@
+{
+  "name": "radios",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "gmzi",
+  "license": "ISC",
+  "description": "play audio streams easily",
+  "dependencies": {
+    "ws": "^8.18.2"
+  }
+}
