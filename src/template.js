@@ -21,6 +21,7 @@ const generateHtml = (stations) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Radio Stations</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="/manifest.json">
     </head>
     <body>
         <header>

@@ -30,3 +30,7 @@ A user can:
 
 - install packages.
 - `npm run dev` to serve index.html at localhost:3000
+
+Add a radio:
+- go to /src/stations.json, add an object there.
+- `npm run build` to grab stations from .json and make the html file.

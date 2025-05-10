@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -5,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Radio Stations</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="/manifest.json">
     </head>
     <body>
         <header>
@@ -14,144 +16,110 @@
             <section>
                 <h1>Stations</h1>
                 <ul>
-                    <li>
-                        <h2>Pop 101.5</h2>
-                        <audio id="audio-0" controls>
-                            <source
-                                src="http://popradio.stweb.tv/popradio/live/playlist.m3u8"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>Rock & Pop</h2>
-                        <audio id="audio-1" controls>
-                            <source
-                                src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOP.mp3"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>Nacional Clasica</h2>
-                        <audio id="audio-2" controls>
-                            <source
-                                src="https://sa.mp3.icecast.magma.edge-access.net/sc_rad37"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>La Patriada FM</h2>
-                        <audio id="audio-3" controls>
-                            <source
-                                src="https://cdn.instream.audio:9107/stream"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>Metro 95.1</h2>
-                        <audio id="audio-4" controls>
-                            <source
-                                src="https://27343.live.streamtheworld.com:443/METRO"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>La 2x4</h2>
-                        <audio id="audio-5" controls>
-                            <source
-                                src="https://media.radios.ar:9270/"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>Radio Universidad CALF</h2>
-                        <audio id="audio-6" controls>
-                            <source
-                                src="https://cdn.instream.audio/:9032/stream?in_device_id=wp-249da420-6c99-4cd8-8e76-76cf52479750"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>LU 5 AM</h2>
-                        <audio id="audio-7" controls>
-                            <source
-                                src="https://live.lu5am.com:8443/LU5?type=.mp3&_=1"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>WHYY - NPR Phil Station</h2>
-                        <audio id="audio-8" controls>
-                            <source
-                                src="https://whyy.streamguys1.com/whyy_persistentplayer"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>WRTI Classical</h2>
-                        <audio id="audio-9" controls>
-                            <source
-                                src="https://19003.live.streamtheworld.com/WRTI_CLASSICAL.mp3?uuid=hf4hf5ll"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>WRTI Jazz</h2>
-                        <audio id="audio-10" controls>
-                            <source
-                                src="https://22213.live.streamtheworld.com/WRTI_JAZZ.mp3?uuid=hf4hf5ll"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-
-                    <li>
-                        <h2>WXPN</h2>
-                        <audio id="audio-11" controls>
-                            <source
-                                src="https://wxpn.xpn.org/xpnmp3hi"
-                                type="audio/mpeg"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
+                    
+                <li>
+                    <h2>Pop 101.5</h2>
+                    <audio id="audio-0" controls>
+                        <source src="http://popradio.stweb.tv/popradio/live/playlist.m3u8" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>Rock & Pop</h2>
+                    <audio id="audio-1" controls>
+                        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOP.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>Nacional Clasica</h2>
+                    <audio id="audio-2" controls>
+                        <source src="https://sa.mp3.icecast.magma.edge-access.net/sc_rad37" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>La Patriada FM</h2>
+                    <audio id="audio-3" controls>
+                        <source src="https://cdn.instream.audio:9107/stream" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>Metro 95.1</h2>
+                    <audio id="audio-4" controls>
+                        <source src="https://27343.live.streamtheworld.com:443/METRO" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>La 2x4</h2>
+                    <audio id="audio-5" controls>
+                        <source src="https://media.radios.ar:9270/" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>Radio Universidad CALF</h2>
+                    <audio id="audio-6" controls>
+                        <source src="https://cdn.instream.audio/:9032/stream?in_device_id=wp-249da420-6c99-4cd8-8e76-76cf52479750" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>LU 5 AM</h2>
+                    <audio id="audio-7" controls>
+                        <source src="https://live.lu5am.com:8443/LU5?type=.mp3&_=1" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>WHYY - NPR Phil Station</h2>
+                    <audio id="audio-8" controls>
+                        <source src="https://whyy.streamguys1.com/whyy_persistentplayer" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>WRTI Classical</h2>
+                    <audio id="audio-9" controls>
+                        <source src="https://19003.live.streamtheworld.com/WRTI_CLASSICAL.mp3?uuid=hf4hf5ll" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>WRTI Jazz</h2>
+                    <audio id="audio-10" controls>
+                        <source src="https://22213.live.streamtheworld.com/WRTI_JAZZ.mp3?uuid=hf4hf5ll" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
+                <li>
+                    <h2>WXPN</h2>
+                    <audio id="audio-11" controls>
+                        <source src="https://wxpn.xpn.org/xpnmp3hi" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+            
                 </ul>
             </section>
         </main>
         <script>
-            const audioElements = document.querySelectorAll("audio");
+            const audioElements = document.querySelectorAll('audio');
             audioElements.forEach((audio) => {
-                audio.addEventListener("play", () => {
+                audio.addEventListener('play', () => {
                     audioElements.forEach((otherAudio) => {
                         if (otherAudio !== audio && !otherAudio.paused) {
                             otherAudio.pause();
@@ -162,3 +130,4 @@
         </script>
     </body>
 </html>
+    
