@@ -22,6 +22,8 @@ const generateHtml = (stations) => {
         <title>Radio Stations</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" href="/icons/icon-180.png">
+        <link rel="icon" type="image/png" href="/icons/favicon.ico">
     </head>
     <body>
         <header>
