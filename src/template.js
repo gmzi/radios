@@ -19,11 +19,13 @@ const generateHtml = (stations) => {
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Radio Stations</title>
+        <meta name="description" content="stream radio stations">
         <link rel="stylesheet" href="styles.css" />
-        <link rel="manifest" href="/manifest.json">
-        <link rel="apple-touch-icon" href="/icons/icon-180.png">
-        <link rel="icon" type="image/png" href="/icons/favicon.ico">
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="icons/icon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <title>Radio Stations</title>
     </head>
     <body>
         <header>
