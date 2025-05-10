@@ -27,11 +27,13 @@ const generateHtml = (stations) => {
     </head>
     <body>
         <header>
-            <h1>Radios</h1>
+            <a href="/">
+              <h1>Radios</h1>
+            </a>
         </header>
         <main>
             <section>
-                <h1>Stations</h1>
+                <h2>Stations</h2>
                 <ul>
                     ${stationItems}
                 </ul>
