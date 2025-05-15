@@ -20,6 +20,10 @@ async function build() {
     const outputPath = path.join(distPath, "index.html");
     await fs.writeFile(outputPath, htmlContent);
 
+    // make a client copy of stations.json
+    const stationsCopyPath = path.join(distPath, "stations.json");
+    await fs.copyFile(stationsPath, stationsCopyPath);
+
     console.log("Build completed successfully! Generated: dist/index.html");
   } catch (error) {
     console.error("Build failed:", error);

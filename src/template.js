@@ -4,10 +4,9 @@ const generateHtml = (stations) => {
       (station, index) => `
                 <li>
                     <h2>${station.name}</h2>
-                    <audio id="audio-${index}" controls>
-                        <source src="${station.stream}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                    <div class="station" id="station-${index}">
+                        <button onClick="playStation('${station.id}')">play</button>
+                    </div>
                 </li>
             `,
     )
@@ -36,23 +35,17 @@ const generateHtml = (stations) => {
         <main>
             <section>
                 <h2>Stations</h2>
-                <ul>
+                <ul id="station-list">
                     ${stationItems}
                 </ul>
+                <div class="player">
+                    <div id="now-playing">Select station</div>
+                    <img src="icons/icon-180.png" alt="Cover Art">
+                    <audio id="audio-player" controls></audio>
+                </div>
             </section>
         </main>
-        <script>
-            const audioElements = document.querySelectorAll('audio');
-            audioElements.forEach((audio) => {
-                audio.addEventListener('play', () => {
-                    audioElements.forEach((otherAudio) => {
-                        if (otherAudio !== audio && !otherAudio.paused) {
-                            otherAudio.pause();
-                        }
-                    });
-                });
-            });
-        </script>
+        <script src="player.js"></script>
     </body>
 </html>
     `;

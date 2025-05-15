@@ -33,4 +33,4 @@ A user can:
 
 Add a radio:
 - go to /src/stations.json, add an object there.
-- `npm run build` to grab stations from .json and make the html file.
+- `npm run build` to generate all client files.
