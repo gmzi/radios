@@ -34,3 +34,6 @@ A user can:
 Add a radio:
 - go to /src/stations.json, add an object there.
 - `npm run build` to generate all client files.
+- `git add .` stage all files.
+- `git commit -m myMessage` commit changes.
+- `git push` push to repo and trigger a redeploy.

@@ -74,7 +74,6 @@ body {
       "Helvetica Neue", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    margin: 1rem;
     padding-bottom: 6.25rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -210,10 +209,9 @@ section h2 {
     right: 0;
     background: linear-gradient(135deg, var(--player-bg-from), var(--player-bg-to));
     color: var(--player-text);
-    padding: 12px 15px;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     height: 80px;
@@ -236,10 +234,8 @@ section h2 {
 .player-info {
     display: flex;
     align-items: center;
-    flex: 1;
     overflow: hidden;
     position: relative;
-    z-index: 1;
 }
 
 .player img {
@@ -253,6 +249,7 @@ section h2 {
 
 .player-text {
     display: flex;
+    flex: 1;
     flex-direction: column;
     overflow: hidden;
 }
