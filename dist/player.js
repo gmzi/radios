@@ -105,6 +105,20 @@ async function playStation(stationId) {
       updateMuteButtons();
     });
 
+    airplayBtn.addEventListener("click", () => {
+      console.log("AirPlay button clicked");
+      if (
+        audioPlayer.src &&
+        typeof audioPlayer.webkitShowPlaybackTargetPicker === "function"
+      ) {
+        console.log("Showing AirPlay picker");
+        audioPlayer.webkitShowPlaybackTargetPicker();
+      } else {
+        console.log("AirPlay picker not available or no audio source");
+        playerStatus.textContent = "AirPlay not available";
+      }
+    });
+
     audioPlayer.addEventListener("playing", () => {
       playerStatus.textContent = "Playing";
       updatePlayStopButtons();
@@ -115,8 +129,12 @@ async function playStation(stationId) {
       updatePlayStopButtons();
     });
 
-    audioPlayer.addEventListener("error", () => {
+    audioPlayer.addEventListener("error", (event) => {
+      console.error("Audio player error:", event);
       playerStatus.textContent = "Error loading station";
+      if (audioPlayer.webkitCurrentPlaybackTargetIsWireless) {
+        playerStatus.textContent = "AirPlay connection failed";
+      }
       updatePlayStopButtons();
     });
 
@@ -124,26 +142,42 @@ async function playStation(stationId) {
       updateMuteButtons();
     });
 
+    audioPlayer.addEventListener(
+      "webkitcurrentplaybacktargetiswirelesschanged",
+      () => {
+        console.log(
+          "Wireless playback target changed:",
+          audioPlayer.webkitCurrentPlaybackTargetIsWireless,
+        );
+        if (audioPlayer.webkitCurrentPlaybackTargetIsWireless) {
+          playerStatus.textContent = "Playing via AirPlay";
+        } else {
+          playerStatus.textContent = "Playing locally";
+        }
+      },
+    );
+
+    // Check AirPlay availability
+    audioPlayer.addEventListener(
+      "webkitplaybacktargetavailabilitychanged",
+      (event) => {
+        console.log("AirPlay availability changed:", event.availability);
+        if (event.availability === "available") {
+          airplayBtn.style.display = "flex";
+        } else {
+          airplayBtn.style.display = "none";
+        }
+      },
+    );
+
+    // Add x-webkit-airplay attribute to audio element
+    audioPlayer.setAttribute("x-webkit-airplay", "allow");
+
     airplayBtn.addEventListener("click", () => {
       if (audioPlayer.src && audioPlayer.webkitShowPlaybackTargetPicker) {
         audioPlayer.webkitShowPlaybackTargetPicker();
       }
     });
-
-    // Check if Airplay is available
-    document.addEventListener("DOMContentLoaded", () => {
-      if (
-        /iPhone|iPad|iPod|Mac/.test(navigator.userAgent) &&
-        typeof audioPlayer.webkitShowPlaybackTargetPicker === "function"
-      ) {
-        airplayBtn.style.display = "flex";
-      } else {
-        airplayBtn.style.display = "none";
-      }
-    });
-
-    // Add x-webkit-airplay attribute to audio element
-    audioPlayer.setAttribute("x-webkit-airplay", "allow");
 
     document.addEventListener("DOMContentLoaded", () => {
       const stationButtons = document.querySelectorAll(".station button");
