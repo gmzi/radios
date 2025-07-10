@@ -2,6 +2,7 @@
   "name": "radios",
   "short_name": "radios",
   "start_url": "index.html",
+  "display": "standalone",
   "description": "play radio stations as streams",
   "icons": [
     {
