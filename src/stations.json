@@ -12,63 +12,69 @@
     "id": "station-2"
   },
   {
+    "name": "Urbana Play",
+    "url": "https://urbanaplayfm.com",
+    "stream": "https://cdn.instream.audio:9660/stream",
+    "id": "station-3"
+  },
+  {
     "name": "Nacional Clasica",
     "url": "https://www.radionacional.com.ar/nacional-clasica/",
     "stream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad37",
-    "id": "station-3"
+    "id": "station-4"
   },
   {
     "name": "La Patriada FM",
     "url": "https://fmlapatriada.com.ar/",
     "stream": "https://cdn.instream.audio:9107/stream",
-    "id": "station-4"
+    "id": "station-5"
   },
   {
     "name": "Metro 95.1",
     "url": "https://www.metro951.com/",
     "stream": "https://27343.live.streamtheworld.com:443/METRO",
-    "id": "station-5"
+    "id": "station-6"
   },
   {
     "name": "La 2x4",
     "url": "https://buenosaires.gob.ar/secretariadecomunicacion/la-2x4",
     "stream": "https://media.radios.ar:9270/",
-    "id": "station-6"
+    "id": "station-7"
   },
   {
     "name": "Radio Universidad CALF",
     "url": "https://universidadcalf.com/",
     "stream": "https://cdn.instream.audio/:9032/stream?in_device_id=wp-249da420-6c99-4cd8-8e76-76cf52479750",
-    "id": "station-7"
+    "id": "station-8"
   },
   {
     "name": "LU 5 AM",
     "url": "https://lu5am.com/",
     "stream": "https://live.lu5am.com:8443/LU5?type=.mp3&_=1",
-    "id": "station-8"
+    "id": "station-9"
   },
   {
     "name": "WHYY - NPR Phil Station",
     "url": "https://whyy.org/",
     "stream": "https://whyy.streamguys1.com/whyy_persistentplayer",
-    "id": "station-9"
+    "id": "station-10"
   },
   {
     "name": "WRTI Classical",
     "url": "https://www.wrti.org/",
     "stream": "https://19003.live.streamtheworld.com/WRTI_CLASSICAL.mp3?uuid=hf4hf5ll",
-    "id": "station-10"
+    "id": "station-11"
   },
   {
     "name": "WRTI Jazz",
     "url": "https://www.wrti.org/",
     "stream": "https://22213.live.streamtheworld.com/WRTI_JAZZ.mp3?uuid=hf4hf5ll",
-    "id": "station-11"
+    "id": "station-12"
   },
   {
     "name": "WXPN",
     "url": "https://xpn.org/",
     "stream": "https://wxpn.xpn.org/xpnmp3hi",
-    "id": "station-12"
+    "id": "station-13"
   }
 ]
