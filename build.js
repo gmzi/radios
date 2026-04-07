@@ -9,8 +9,13 @@ async function build() {
     const stationsData = await fs.readFile(stationsPath, "utf8");
     const stations = JSON.parse(stationsData);
 
+    // Read links.json
+    const linksPath = path.join(__dirname, "src", "links.json");
+    const linksData = await fs.readFile(linksPath, "utf8");
+    const links = JSON.parse(linksData);
+
     // Generate HTML
-    const htmlContent = generateHtml(stations);
+    const htmlContent = generateHtml(stations, links);
 
     // Ensure dist directory exists
     const distPath = path.join(__dirname, "dist");
