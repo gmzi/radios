@@ -12,6 +12,11 @@ A vanilla javascript client to play audio streams.
 - go to `/src/stations.json`, add object.
 - `npm run build` to generate all client files.
 
+## Add an external link
+
+- go to `/src/links.json`, add object.
+- `npm run build` to generate all client files.
+
 ## Features
 
 - Create a database to store radio streams. This database could be open and hosted in nostr protocol. Or a regular database.
