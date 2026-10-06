@@ -2,5 +2,9 @@
   {
     "name": "radioarg.net",
     "url": "https://radioarg.net"
+  },
+  {
+    "name": "open in browser",
+    "url": "https://radios-ivory.vercel.app"
   }
 ]
